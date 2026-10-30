@@ -1,0 +1,159 @@
+#bg2 {
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        background-image:url("homepage_background2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        background-position: center;
+}
+
+#bg3 {
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        left:0px;
+        top:0px;
+        background-image:url("grid1.png");
+        background-size: 12vh;
+        background-attachment: fixed;
+        animation: pan 180s linear infinite;
+}
+@keyframes pan {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+#bg4 {
+    position:fixed;
+    width: 100vw;
+    height:62px;
+    bottom: 0px;
+    background-image:url("catdance.gif");
+    background-size: 62px;
+    background-attachment: fixed;
+    background-repeat: repeat no-repeat;
+    animation: scroll 60s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+#bg5 {
+        position:fixed;
+        height: 100vh;
+        width: 110vh;
+        left: max( calc(100vw - 110vh) ,  0px);
+        background-size: 100vh;
+        background-position:right;
+        background-image:url("homepage_sheep.png");
+        background-repeat: no-repeat; 
+}
+#bg6 {
+        position:fixed;
+        height: 100vh;
+        width: 110vh;
+        left: min(0px, calc(100vw - 80vh));
+        background-size: auto 100vh;
+        background-position:left;
+        background-image:url("hellowelcome.png");
+        background-repeat: no-repeat; 
+}
+
+#index_about {
+    text-align:center;
+    position: fixed;
+    background-image:url("info_icon_homepage1.png");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:90%;
+    height:8vh;
+    width:15vh;
+    left: min(36vh, calc(100vw - 44vh));
+    top: 23.5vh;
+}
+
+#index_gallery {
+    text-align:center;
+    position: fixed;
+    background-image:url("gallery_icon_homepage1.png");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:90%;
+    height:16vh;
+    width:40vh;
+    left: min(23vh, calc(100vw - 57vh));
+    top: 32vh;
+}
+
+#index_fmsvl {
+    text-align:center;
+    position: fixed;
+    background-image:url("fmsvl_icon_homepage1.png");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:90%;
+    height:16vh;
+    width:29vh;
+    left: min(26.5vh, calc(100vw - 53.5vh));
+    top: 46vh;
+}
+
+#index_random {
+    text-align:center;
+    position: fixed;
+    background-image:url("random_icon_homepage1.png");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:90%;
+    height:16vh;
+    width:40vh;
+    left: min(19vh, calc(100vw - 61vh));
+    top: 60vh;
+}
+#index_yt {
+    text-align:center;
+    position: fixed;
+    background-image:url("yt_icon_homepage.png");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:90%;
+    height:6vh;
+    width:6vh;
+    left: min(23vh, calc(100vw - 57vh));
+    top: 76vh;
+}
+#index_ig {
+    text-align:center;
+    position: fixed;
+    background-image:url("ig_icon_homepage.png");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:90%;
+    height:6vh;
+    width:6vh;
+    left: min(29vh, calc(100vw - 51vh));
+    top: 76vh;
+}
+#index_ng {
+    text-align:center;
+    position: fixed;
+    background-image:url("ng_icon_homepage.png");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:90%;
+    height:6vh;
+    width:6vh;
+    left: min(35vh, calc(100vw - 45vh));
+    top: 76vh;
+}

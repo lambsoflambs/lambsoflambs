@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+.grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    gap: 100px;
+}
+#gameworld2 {
+    position:relative;
+    height:600px;
+    width:600px;
+}
+#gameworld {
+    position:relative;
+    height:400px;
+    width:400px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+#catPiano {
+    position: relative;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:60px;
+    z-index:10;
+}
+#horse {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#canvas1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.stimages {
+    display: none;
+}
+#resetButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color:rgb(92, 141, 165);
+    
+}
+#canvas2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#trees {
+    position:relative;
+    height:300px;
+    position:relative;
+    bottom:0px;
+    width:100%;
+}
+#everything_container {
+    background-color:rgb(118, 200, 173);
+    position:relative;
+    z-index:0;
+    background-image:url('funzone_bg1.png');
+    animation: scroll 120s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        background-position: 0px 1080px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+#main_container {
+    border:5px solid white; 
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:rgb(159, 223, 198);
+    padding-top:10px;
+    padding-bottom:10px;
+    z-index:10;
+}
+#bg1{
+    width:100%;
+    height:1295px;
+    position:absolute;
+    background-image:url('funzone_bg5.png');
+    background-size:auto 130%;
+    background-position:bottom;
+    background-repeat:repeat;
+    z-index: -1;
+}
+#bg3 {
+    left:0px;
+    width:100%;
+    height:300px;
+    position:absolute;
+    background-image:url('funzone_bg3.png');
+    background-size: auto 100%;
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    z-index:-1;
+}
+#bg4 {
+    right:0px;
+    width:100%;
+    height:300px;
+    position:absolute;
+    background-image:url('funzone_bg4.png');
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    z-index:-1;
+}

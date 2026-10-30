@@ -1,0 +1,112 @@
+
+#bg-blog2 {
+        text-align: center;
+        position:relative;
+        width: 100%;
+        height: 100%;
+        left:0px;
+        top:0px;
+        background-image: url("grid2.png");
+        background-size: 120px;
+        animation: pan 180s linear infinite;
+}
+@keyframes pan {
+    0% {
+        background-position: 1000px 0px;
+    }
+    100% {
+        background-position: 0px 1000px;
+    }
+}
+
+.vegan_title {
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.blog_element {
+    position:relative;
+    width: min(1000px, 80%);
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid black;
+    background-color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:20px;
+    text-align:left;
+    font-size:1.75em;
+}
+
+.funny_foods {
+    width:min(1000px, 80%);
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.date {
+    display:inline-block;
+    position:absolute;
+    right:4px;
+    color:grey;
+}
+
+#bad_basil {
+    font-weight:bold;
+    font-size:1.1em;
+    border:3px solid rgb(78, 21, 21);
+    border-radius: 5px;
+    background-image:linear-gradient(rgb(255, 240, 240),rgb(255, 115, 115));
+    padding:5px;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+#medium_basil {
+    font-weight:bold;
+    font-size:1.1em;
+    border:3px solid rgb(78, 58, 21);
+    border-radius: 5px;
+    background-image:linear-gradient(rgb(255, 255, 240),rgb(255, 253, 115));
+    padding:5px;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+#good_basil {
+    font-weight:bold;
+    font-size:1.1em;
+    border:3px solid rgb(21, 78, 24);
+    border-radius: 5px;
+    background-image:linear-gradient(rgb(240, 255, 243),rgb(115, 255, 150));
+    padding:5px;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+.heading_tri {
+    display:inline-block;
+    position:absolute;
+    right:25px;
+}
+
+#tri1 {
+    height:.8em;
+    vertical-align:middle;
+}
+
+#tri2 {
+    height:.8em;
+    vertical-align:middle;
+}
+
+#tri3 {
+    height:.8em;
+    vertical-align:middle;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="blog_style.css">
+        <title> FMSVL </title>
+        <style>
+            @font-face {
+                font-family: 'DSfont';
+                src: url('Nintendo-DS-BIOS.ttf') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
+        <script>
+            function toggle_section(id, tri) {
+                let section = document.getElementById(id);
+                let triangle = document.getElementById(tri);
+                if (section.checkVisibility()) {
+                    section.style.display = "none";
+                    triangle.src = "basil_tri2.png"
+                } else {
+                    section.style.display = "block";
+                    triangle.src = "basil_tri1.png"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="bg-blog" style="position:fixed;width:100%;height:100%;left:0px;top:0px;">
+            <div id="bg-blog2">
+            </div>
+        </div>
+
+         <div style="position:relative;width:100%;text-align:center;display:table;"> 
+            <a href="/"><img style="height:100px;vertical-align: middle;" src="home1.png" onmouseover="this.src='home2.png';" onmouseout="this.src='home1.png';"></a>
+            <a href="about"><img style="height:100px;vertical-align: middle;"src="info_icon1.png" onmouseover="this.src='info_icon2.png';" onmouseout="this.src='info_icon1.png';"></a>
+            <a href="gallery"><img style="height:100px;vertical-align: middle;"src="gallery_icon1.png" onmouseover="this.src='gallery_icon2.png';" onmouseout="this.src='gallery_icon1.png';"></a>
+            <a href="FMSVL"><img style="height:100px;vertical-align: middle;"src="fmsvl_icon1.png" onmouseover="this.src='fmsvl_icon2.png';" onmouseout="this.src='fmsvl_icon1.png';"></a>
+            <a href="FUNZONE"><img style="height:100px;vertical-align: middle;"src="games_icon1.png" onmouseover="this.src='games_icon2.png';" onmouseout="this.src='games_icon1.png';"></a>
+        </div>
+
+        
+
+        <div class="blog_element" style="font-family:DSfont,Arial,sans-serif">
+            <h1 style="text-align:center"> I Think You Should Grow Your Own Basil </h1>
+        </div>
+        <div class="funny_foods">
+            <img style="width:9%;" src="onion.gif">
+            <img style="width:9%;" src="broccoli.gif">
+            <img style="width:9%;" src="banana.gif">
+            <img style="width:9%;" src="garlic.gif">
+            <img style="width:9%;" src="avocado.gif">
+            <img style="width:9%;" src="onion.gif">
+            <img style="width:9%;" src="broccoli.gif">
+            <img style="width:9%;" src="banana.gif">
+            <img style="width:9%;" src="garlic.gif">
+            <img style="width:9%;" src="avocado.gif">
+        </div>
+
+        <div class="blog_element" style="font-family:DSfont,Arial,sans-serif">
+            <p>What?!?!?! You want me to grow basil?!?!?!?!?!</p>
+            <p>A primary ingredient in pesto, and a delightful accent to include in my pizzas, pastas, soups and more?!?!?!?! </p>
+            <p>A nutritious herb, carrying a tremendous supply of vitamin K, and a wealth of other goods such as vitamin A, vitamin C, Manganese, Copper, Iron, and Calcium?!?!!? </p>
+            <p>A fragrant, low-maintenance and practical houseplant which looks splendid by my kitchen window, and may provide ample opportunity to harvest indefinitely without ever needing to spend another dime on it?!?!?!?!?!</p>
+            <p>Yeah!</p>
+            <p>Growing basil is really really cheap and really really easy. Anyone can do it!</p>
+
+            <h2> PHASE 1: BIRTH </h2>
+            <p>Okay, there’s a few ways of doing this. </p>
+             
+                <div id="bad_basil" onmousedown="toggle_section('bad_content', 'tri1')"> BUYING A STOREBOUGHT PLANT (the bad way) <img style="height:.8em;vertical-align:middle;" src="basil_angry.png"> 
+                    <div class="heading_tri"> <img id="tri1" src="basil_tri2.png"> </div> 
+                </div>
+                    <ul id="bad_content" style="display:none;">
+                        <li>Okay, it’s not actually that bad if you know what you’re doing. But these plants are literally sold to die! (!!!!!!!!!!!!!!!!!)</li><br>
+                        <li>Huh? what's wrong with it?</li>
+                        <ul>
+                            <li>They die really quickly because retailers cram way too many plants into one tiny container of soil. So the roots don't have anywhere to grow, and they all compete with each other… and then they die. Usually after just a few days :/</li>
+                        </ul><br>
+                        <li>Why are they sold this way?</li>
+                        <ul>
+                            <li>They’re sold this way because if you don’t know what’s wrong with it and it dies, then you’re more likely to come back and buy more! It’s fucked up!!!</li>
+                        </ul><br>
+                        <li>Okay, but I want to buy a basil plant from the grocery store anyway.</li>
+                        <ul>
+                            <li>That's fine, honestly. But if you want your plants to live, then just make sure to relocate each one into their own individual pots of soil. That's it lol just don't get scammed </li>
+                        </ul>
+                    </ul>
+                </li>
+                <div id="medium_basil" onmousedown="toggle_section('medium_content', 'tri2')"> STARTING FROM SEEDS (the slower way) <img style="height:.8em;vertical-align:middle;" src="basil_neutral.png">
+                    <div class="heading_tri"> <img id="tri2" src="basil_tri2.png"> </div>
+                </div>
+                    <ul id="medium_content" style="display:none;">
+                        <li>Buy a packet of basil seeds.</li>
+                        <li>Arrange your seeds evenly in a damp paper towel, fold it, and put it in a dark place. After a few days, your seeds will sprout. </li>
+                        <a href="seeds.gif"target="_blank"><img style="width:100%;" src="seeds.gif"></a>
+                        <li>Once your seeds have sprouted, you can plant them in soil. I would just do one, maybe two per pot. The more you plant together, the sooner they will start to compete with one another. </li>
+                        <li>This method is also pretty easy, it just takes the longest to start.</li>
+                    </ul>
+                </li>
+                <div id="good_basil" onmousedown="toggle_section('good_content', 'tri3')"> STARTING FROM A STEM (my fav way) <img style="height:.8em;vertical-align:middle;" src="basil_happy.png"> 
+                    <div class="heading_tri"> <img id="tri3" src="basil_tri1.png"> </div>
+                </div>
+                    <ul id="good_content">
+                        <li>First, acquire a stem. This can come from a pre-existing basil plant or a thing of basil stems at a grocery store.</li>
+                        <li>Take your a stem and cut out a single node.</li>
+                        <li>(Basil grows in a distinct pattern, made up of repeating “nodes”. Here is a diagram explaining what I mean.)</li>
+                        <a href="basil1.png"target="_blank"><img style="width:100%;" src="basil1.png"></a>
+                        <li>Put this section of the stem into a cup of water, and place it by a sunny window. In a few days it will start to form roots.</li> 
+                        <a href="basil2.png"target="_blank"><img style="width:100%;" src="basil2.png"></a>
+                        <li>I like to leave it in the water until the roots have gotten a bit lengthy, like in the illustration. </li>
+                        <li>Next, plant it in a pot with some soil by the window. Basically any kind of soil will work!</li>
+                        <li>The pot should have drainage holes at the bottom. It will get the surrounding area wet so be sure to put it on a surface that you’re ok with getting wet. Like a plate or something.</li>
+                        <li>You now have a basil plant!</li>
+                        <a href="basil4.png"target="_blank"><img style="width:min(300px,50%);" src="basil4.png"></a>
+                    </ul>
+                </li>
+            
+
+            <h2> PHASE 2: LIFE </h2>
+            <ul>
+                <li>Water the plant every few days. The best way to tell when to water is to feel the soil slightly underneath the surface with your fingers. If it feels dry, water it!</li>
+                <li>Your basil will start to grow each day! Once it’s grown a bit taller, it’s time to harvest it. Don’t harvest by just picking leaves - instead, snip off individual nodes.</li>
+                <li>When you cut like this, two new nodes will grow in its place, and your basil plant will grow exponentially!</li>
+                <a href="basil3.png"target="_blank"><img style="width:100%;" src="basil3.png"></a>
+                <li>Do note that if you let any one branch grow too tall uninterrupted, it will flower. Once a basil plant flowers, it slows leaf production to a crawl. So be sure to cut your plant before it reaches that point! </li>
+                <li>At the peak of my basil plant's life, I usually harvest about once or twice a week.</li>
+            </ul>
+
+            <h2> PHASE 3: DEATH AND REPRODUCTION </h2>
+            <ul>
+                <li>When well-cared for, basil can live for a very long time. But chances are, your plant will die eventually. That’s just the way it goes! </li>
+                <li>The biggest killer of my plants is when the roots grow too big for the pot they are in. One way to handle this is through repotting, or trimming the roots… but that's kind of a hassle!</li>
+                <li>An easy option is to simply cut off a node, put it in water, and start the process over again! </li>
+                <li>With this method, you can have perpetual basil. Generations of basil plants all grown from one original version. Isn’t that cool???</li>
+            </ul>
+            
+            <h2> VEGAN PESTO RECIPE </h2>
+            <ul>
+                <li>In a food processor or blender, crush up some nuts until you are left with nothing but crumbs. You can kind of use whatever nuts you feel like. Real Italians use pine nuts, but I like to use about a cup of cashews. Real Italians would also tell you to use a mortar and pestle instead of a food processor or blender. Don't worry about it it's fine. </li>
+                <li>~1 cup of basil leaves, or just however much you have honestly. I also like to throw in a bit of spinach or kale because it’s good for you. </li>
+                <li>~1/3 cup of nutritional yeast. Real Pesto uses parmesan cheese, but I’m vegan, so I substitute with this. It provides a similar umami component to the recipe. You can also use vegan parmesan cheese, if you want to. Or regular parmesan cheese, if you’re not vegan. (you can even use… all three at the same time…?!) </li>
+                <li>~1 teaspoon of salt.</li>
+                <li>~1 tablespoon of minced garlic.</li>
+                <li>~1 tablespoon of lime juice or lemon juice.</li>
+                <li>Next, blend everything together and add olive oil gradually. Keep blending and adding it little by little until everything becomes incorporated into a sauce. It may thicken up and clump together before it evens out. I don’t have an exact measurement for this, but something in the neighborhood of 1/3 of a cup usually does it for me.</li>
+                <li>NOW DO THE TASTE TEST:</li>
+                <li>A key part of the pesto-making process is to taste and adjust until you're happy with it. Thus, any measurement I gave here was only a suggestion. Does it taste too mild? Add more salt, salt is a flavor enhancer. Do you want more of a zing to it? Add more lemon juice. Did you accidentally add too much lemon juice? More nutritional yeast will help balance it out. Just taste and experiment until you’re satisfied. You will learn how the different flavors interact with one another, which is the key to vibes-based cooking.</li>
+                <br>
+                <li>There you go! You did it! Put this on some pasta or something and enjoy!!! ^_^</li>
+            </ul>
+        </div>
+        <div class="funny_foods">
+            <img style="width:9%;" src="onion.gif">
+            <img style="width:9%;" src="broccoli.gif">
+            <img style="width:9%;" src="banana.gif">
+            <img style="width:9%;" src="garlic.gif">
+            <img style="width:9%;" src="avocado.gif">
+            <img style="width:9%;" src="onion.gif">
+            <img style="width:9%;" src="broccoli.gif">
+            <img style="width:9%;" src="banana.gif">
+            <img style="width:9%;" src="garlic.gif">
+            <img style="width:9%;" src="avocado.gif">
+        </div>
+
+    </body>
+</html>
