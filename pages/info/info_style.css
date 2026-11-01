@@ -4,7 +4,7 @@ body {
     background-repeat:no-repeat;
 }
 #logo_container {
-    background-image:url("assets/info_clouds.png");
+    background-image:url("info_clouds.png");
     background-size:auto 60%;
     background-repeat:repeat no-repeat;
     animation: scroll 300s linear infinite;

@@ -5,11 +5,11 @@ function createPiano() {
     for (var j=0;j<13;j++){ 
         var cat2 = cat.cloneNode(true);
         if (j==1 || j==3 || j==6 || j==8 || j==10) {
-            cat2.src = "cat3.png";
+            cat2.src = "pages/games/cat3.png";
             cat2.class = "blackcat";
 
         } else {
-            cat2.src = "cat1.png";
+            cat2.src = "pages/games/cat1.png";
             cat2.class = "whitecat";
         }
         document.getElementById("catPiano").appendChild(cat2);
@@ -19,47 +19,47 @@ function createPiano() {
 }
 function meow(cat) {
     if (cat.class == "whitecat") {
-        cat.src = 'cat2.png';
+        cat.src = 'pages/games/cat2.png';
     } else {
-        cat.src = 'cat4.png';
+        cat.src = 'pages/games/cat4.png';
     }
 
     // i feel like yanderedev
-    var meow = new Audio('MarioPaintMeow.mp3');
+    var meow = new Audio('pages/games/MarioPaintMeow.mp3');
     if (document.getElementsByClassName("whitecat")[0] == cat) {
-        meow = new Audio('MarioPaintMeowC4.wav');
+        meow = new Audio('pages/games/MarioPaintMeowC4.wav');
     } else if (document.getElementsByClassName("whitecat")[1] == cat) {
-        meow = new Audio('MarioPaintMeowCsharp.wav');
+        meow = new Audio('pages/games/MarioPaintMeowCsharp.wav');
     } else if (document.getElementsByClassName("whitecat")[2] == cat) {
-        meow = new Audio('MarioPaintMeowD.wav');
+        meow = new Audio('pages/games/MarioPaintMeowD.wav');
     } else if (document.getElementsByClassName("whitecat")[3] == cat) {
-        meow = new Audio('MarioPaintMeowDsharp.wav');
+        meow = new Audio('pages/games/MarioPaintMeowDsharp.wav');
     } else if (document.getElementsByClassName("whitecat")[4] == cat) {
-        meow = new Audio('MarioPaintMeowE.wav');
+        meow = new Audio('pages/games/MarioPaintMeowE.wav');
     } else if (document.getElementsByClassName("whitecat")[5] == cat) {
-        meow = new Audio('MarioPaintMeowF.wav');
+        meow = new Audio('pages/games/MarioPaintMeowF.wav');
     } else if (document.getElementsByClassName("whitecat")[6] == cat) {
-        meow = new Audio('MarioPaintMeowFsharp.wav');
+        meow = new Audio('pages/games/MarioPaintMeowFsharp.wav');
     } else if (document.getElementsByClassName("whitecat")[7] == cat) {
-        meow = new Audio('MarioPaintMeowG.wav');
+        meow = new Audio('pages/games/MarioPaintMeowG.wav');
     } else if (document.getElementsByClassName("whitecat")[8] == cat) {
-        meow = new Audio('MarioPaintMeowGsharp.wav');
+        meow = new Audio('pages/games/MarioPaintMeowGsharp.wav');
     } else if (document.getElementsByClassName("whitecat")[9] == cat) {
-        meow = new Audio('MarioPaintMeowA.wav');
+        meow = new Audio('pages/games/MarioPaintMeowA.wav');
     } else if (document.getElementsByClassName("whitecat")[10] == cat) {
-        meow = new Audio('MarioPaintMeowAsharp.wav');
+        meow = new Audio('pages/games/MarioPaintMeowAsharp.wav');
     } else if (document.getElementsByClassName("whitecat")[11] == cat) {
-        meow = new Audio('MarioPaintMeowB.wav');
+        meow = new Audio('pages/games/MarioPaintMeowB.wav');
     } else if (document.getElementsByClassName("whitecat")[12] == cat) {
-        meow = new Audio('MarioPaintMeowC5.wav');
+        meow = new Audio('pages/games/MarioPaintMeowC5.wav');
     } 
     volume_set(meow);
     meow.play();
 }
 function unmeow(cat) {
     if (cat.class == "whitecat") {
-        cat.src = 'cat1.png';
+        cat.src = 'pages/games/cat1.png';
     } else {
-        cat.src = 'cat3.png';
+        cat.src = 'pages/games/cat3.png';
     }
 }

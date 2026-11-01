@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
             ups++;
             this.image = document.getElementById('toy4');
             this.game.drawUpdate();
-            var pop = new Audio('Pop.mp3');
+            var pop = new Audio('pages/games/Pop.mp3');
             volume_set(pop);
             pop.play();
             this.image = document.getElementById('toy2');
@@ -191,12 +191,12 @@ window.addEventListener('load', function() {
         if (resetmode == 2) {
             if (ups > 0) {
                 stim.reset();
-                var strike = new Audio('Teleport2.mp3');
+                var strike = new Audio('pages/games/Teleport2.mp3');
                 volume_set(strike);
                 strike.play();
                 ups = 0;
             } else {
-                var strike = new Audio('Teleport2.mp3');
+                var strike = new Audio('pages/games/Teleport2.mp3');
                 strike.play();
                 volume_set(strike);
                 resetmode=9000;

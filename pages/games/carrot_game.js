@@ -84,9 +84,9 @@ window.addEventListener('load', function() {
             
         }
         addPoints(version) {
-            var woosh = new Audio('Whoosh.mp3');
+            var woosh = new Audio('pages/games/Whoosh.mp3');
             volume_set(woosh);
-            var coin = new Audio('Coin.mp3');
+            var coin = new Audio('pages/games/Coin.mp3');
             volume_set(coin);
             if (version == 1 || version == 2) {
                 woosh.play();
@@ -241,32 +241,32 @@ window.addEventListener('load', function() {
 
             var randomNum = Math.random() * 100;
             let version = 0;
-            var pull = new Audio('Squish Pop.mp3');
+            var pull = new Audio('pages/games/Squish Pop.mp3');
             volume_set(pull);
             if (randomNum < 1) {
                 version = 1;
                 pull.play();
-                var scream = new Audio('Scream2.mp3');
+                var scream = new Audio('pages/games/Scream2.mp3');
                 volume_set(scream);
                 scream.play();
-                this.image = document.getElementById('carrot_horrified');
+                this.image = document.getElementById('pages/games/carrot_horrified');
             } else if (randomNum >= 1 && randomNum < 2) {
                 version = 2;
                 pull.play();
-                var croak = new Audio('Croak.mp3');
+                var croak = new Audio('pages/games/Croak.mp3');
                 volume_set(croak);
                 croak.play();
-                this.image = document.getElementById('carrot_disgusting');
+                this.image = document.getElementById('pages/games/carrot_disgusting');
             } else if (randomNum >= 2 && randomNum < 5) {
                 version = 3;
                 pull.play();
-                var triumph = new Audio('Triumph.mp3');
+                var triumph = new Audio('pages/games/Triumph.mp3');
                 volume_set(triumph);
                 triumph.play();
                 this.image = document.getElementById('carrot_happy');
             } else if (randomNum >= 5 && randomNum < 15) {
                 version = 4;
-                var pull2 = new Audio('Squish Pop2.mp3');
+                var pull2 = new Audio('pages/games/Squish Pop2.mp3');
                 volume_set(pull2);
                 pull2.play();
                 this.image = document.getElementById('carrot_giga');

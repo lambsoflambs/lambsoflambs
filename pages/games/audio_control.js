@@ -6,19 +6,19 @@ window.addEventListener('load', function() {
     volume_level = 2;
     volume_control = document.getElementById("volume_control");
     volume_image = document.getElementById("volume_image");
-    volume_image.src = "volume_control2.png";
+    volume_image.src = "pages/games/volume_control2.png";
 });
 
 function volume_change(volume_image) {
     if (volume_level == 2) {
         volume_level = 0;
-        volume_image.src = "volume_control0.png";
+        volume_image.src = "pages/games/volume_control0.png";
     } else if (volume_level == 1) {
         volume_level = 2;
-        volume_image.src = "volume_control2.png";
+        volume_image.src = "pages/games/volume_control2.png";
     } else if (volume_level == 0) {
         volume_level = 1;
-        volume_image.src = "volume_control1.png";
+        volume_image.src = "pages/games/volume_control1.png";
     } 
 }
 

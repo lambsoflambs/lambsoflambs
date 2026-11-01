@@ -4,16 +4,16 @@
         <title>
             LYNSWORLD
         </title>
-        <link rel="stylesheet" href="styles/kittyStyle.css">
-        <script src="scripts/meows.js"></script>
-        <script src="scripts/stim.js"></script>
-        <script src="scripts/horse.js"></script>
-        <script src="scripts/carrot_game.js"></script>
-        <script src="scripts/audio_control.js"></script>
+        <link rel="stylesheet" href="pages/games/funzone_style.css">
+        <script src="pages/games/meows.js"></script>
+        <script src="pages/games/stim.js"></script>
+        <script src="pages/games/horse.js"></script>
+        <script src="pages/games/carrot_game.js"></script>
+        <script src="pages/games/audio_control.js"></script>
         <style>
             @font-face {
                 font-family: 'DSfont';
-                src: url('fonts/Nintendo-DS-BIOS.ttf') format('woff2');
+                src: url('general/fonts/Nintendo-DS-BIOS.ttf') format('woff2');
                 font-weight: normal;
                 font-style: normal;
             }
@@ -22,69 +22,69 @@
     <body onload="createPiano()">
         <div id="everything_container">
         <div style="background-color:rgb(92, 141, 165);position:relative;width:100%;text-align:center;display:table;"> 
-            <a href="/"><img style="height:100px;vertical-align: middle;" src="assets/home1.png" onmouseover="this.src='assets/home2.png';" onmouseout="this.src='assets/home1.png';"></a>
-            <a href="about"><img style="height:100px;vertical-align: middle;"src="assets/info_icon1.png" onmouseover="this.src='assets/info_icon2.png';" onmouseout="this.src='assets/info_icon1.png';"></a>
-            <a href="gallery"><img style="height:100px;vertical-align: middle;"src="assets/gallery_icon1.png" onmouseover="this.src='assets/gallery_icon2.png';" onmouseout="this.src='assets/gallery_icon1.png';"></a>
-            <a href="FMSVL"><img style="height:100px;vertical-align: middle;"src="assets/fmsvl_icon1.png" onmouseover="this.src='assets/fmsvl_icon2.png';" onmouseout="this.src='assets/fmsvl_icon1.png';"></a>
-            <a href="FUNZONE"><img style="height:100px;vertical-align: middle;"src="assets/games_icon1.png" onmouseover="this.src='assets/games_icon2.png';" onmouseout="this.src='assets/games_icon1.png';"></a>
+            <a href="/"><img style="height:100px;vertical-align: middle;" src="general/home1.png" onmouseover="this.src='general/home2.png';" onmouseout="this.src='general/home1.png';"></a>
+            <a href="info"><img style="height:100px;vertical-align: middle;"src="general/info_icon1.png" onmouseover="this.src='general/info_icon2.png';" onmouseout="this.src='general/info_icon1.png';"></a>
+            <a href="gallery"><img style="height:100px;vertical-align: middle;"src="general/gallery_icon1.png" onmouseover="this.src='general/gallery_icon2.png';" onmouseout="this.src='general/gallery_icon1.png';"></a>
+            <a href="FMSVL"><img style="height:100px;vertical-align: middle;"src="general/fmsvl_icon1.png" onmouseover="this.src='general/fmsvl_icon2.png';" onmouseout="this.src='general/fmsvl_icon1.png';"></a>
+            <a href="FUNZONE"><img style="height:100px;vertical-align: middle;"src="general/games_icon1.png" onmouseover="this.src='general/games_icon2.png';" onmouseout="this.src='general/games_icon1.png';"></a>
         </div>
         
 
         
         <div style="height:1295px;z-index:1;"> 
             <div id="bg1"> </div>
-            <div style="text-align:center;"> <img style="width:1000px;" src="assets/funzone_logo.png"> </div>
+            <div style="text-align:center;"> <img style="width:1000px;" src="pages/games/funzone_logo.png"> </div>
         
             <div id="main_container"> 
                 <div id="volume_control" style="text-align:center;">
-                    <img id="volume_image" width="140px;" onmousedown="volume_change(this)" src="assets/volume_control2.png">
+                    <img id="volume_image" width="140px;" onmousedown="volume_change(this)" src="pages/games/volume_control2.png">
                 </div>
 
                 <div class="grid-container">
                     <div id="gameworld2">
                         <canvas id="canvas2"></canvas>
                         <div class="stimages">
-                            <img id="carrot_game_bg" src="assets/carrot_game_bg.png">
-                            <img id="carrot_counter" src="assets/carrot_counter.png">
-                            <img id="carrot_stem1" src="assets/carrot_stem1.png">
-                            <img id="carrot_stem2" src="assets/carrot_stem2.png">
-                            <img id="carrot_stem3" src="assets/carrot_stem3.png">
-                            <img id="carrot_stem4" src="assets/carrot_stem4.png">
-                            <img id="carrot_stem5" src="assets/carrot_stem5.png">
-                            <img id="carrot_stem6" src="assets/carrot_stem6.png">
-                            <img id="carrot_normal" src="assets/carrot_normal.png">
-                            <img id="carrot_giga" src="assets/carrot_giga.png">
-                            <img id="carrot_happy" src="assets/carrot_happy.png">
-                            <img id="carrot_disgusting" src="assets/carrot_disgusting.png">
-                            <img id="carrot_horrified" src="assets/carrot_horrified.png">
-                            <img id="poof1" src="assets/poof1.png">
-                            <img id="poof2" src="assets/poof2.png">
-                            <img id="poof3" src="assets/poof3.png">
-                            <img id="poof4" src="assets/poof4.png">
-                            <img id="poof5" src="assets/poof5.png">
+                            <img id="carrot_game_bg" src="pages/games/carrot_game_bg.png">
+                            <img id="carrot_counter" src="pages/games/carrot_counter.png">
+                            <img id="carrot_stem1" src="pages/games/carrot_stem1.png">
+                            <img id="carrot_stem2" src="pages/games/carrot_stem2.png">
+                            <img id="carrot_stem3" src="pages/games/carrot_stem3.png">
+                            <img id="carrot_stem4" src="pages/games/carrot_stem4.png">
+                            <img id="carrot_stem5" src="pages/games/carrot_stem5.png">
+                            <img id="carrot_stem6" src="pages/games/carrot_stem6.png">
+                            <img id="carrot_normal" src="pages/games/carrot_normal.png">
+                            <img id="carrot_giga" src="pages/games/carrot_giga.png">
+                            <img id="carrot_happy" src="pages/games/carrot_happy.png">
+                            <img id="carrot_disgusting" src="pages/games/carrot_disgusting.png">
+                            <img id="carrot_horrified" src="pages/games/carrot_horrified.png">
+                            <img id="poof1" src="pages/games/poof1.png">
+                            <img id="poof2" src="pages/games/poof2.png">
+                            <img id="poof3" src="pages/games/poof3.png">
+                            <img id="poof4" src="pages/games/poof4.png">
+                            <img id="poof5" src="pages/games/poof5.png">
                         </div>
                     </div>
 
                     <div id="gameworld">
                         <canvas id="canvas1"></canvas>
                         <div class="stimages">
-                            <img id="toy" src="assets/stimage1.png">
-                            <img id="toy2" src="assets/stimage2.png">
-                            <img id="toy3" src="assets/stimage3.png">
-                            <img id="toy4" src="assets/stimage4.png">
-                            <img id="toy5" src="assets/stimage5.png">
-                            <img id="board" src="assets/board.png">
-                            <img id="reset1" src="assets/reset1.png">
-                            <img id="reset2" src="assets/reset2.png">
-                            <img id="reset3" src="assets/reset3.png">
-                            <img id="horse" src="assets/horse.gif">
+                            <img id="toy" src="pages/games/stimage1.png">
+                            <img id="toy2" src="pages/games/stimage2.png">
+                            <img id="toy3" src="pages/games/stimage3.png">
+                            <img id="toy4" src="pages/games/stimage4.png">
+                            <img id="toy5" src="pages/games/stimage5.png">
+                            <img id="board" src="pages/games/board.png">
+                            <img id="reset1" src="pages/games/reset1.png">
+                            <img id="reset2" src="pages/games/reset2.png">
+                            <img id="reset3" src="pages/games/reset3.png">
+                            <img id="horse" src="pages/games/horse.gif">
                         </div>
                     </div>
             
                 </div>
 
                 <div id="catPiano">
-                    <img class="whitecat" width = 80px; onmouseover="meow(this)" onmouseleave="unmeow(this)" src="assets/cat1.png">
+                    <img class="whitecat" width = 80px; onmouseover="meow(this)" onmouseleave="unmeow(this)" src="pages/games/cat1.png">
                 </div>
             </div>
             </div>
