@@ -25,6 +25,7 @@ h1 {
     width:400px;
     margin-top:auto;
     margin-bottom:auto;
+    border:2px solid black;
 }
 #catPiano {
     position: relative;
