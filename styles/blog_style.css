@@ -6,7 +6,7 @@
         height: 100%;
         left:0px;
         top:0px;
-        background-image: url("grid2.png");
+        background-image: url("assets/grid2.png");
         background-size: 120px;
         animation: pan 180s linear infinite;
 }
